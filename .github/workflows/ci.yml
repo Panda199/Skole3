@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code #When the github action starts its an empty container, so to interact with your codebase you need to checkout the repo first
         uses: actions/checkout@v2
 
-      - name: Build # This step will install npm dependencies and build the project
+      - name: Build # TEST This step will install npm dependencies and build the project
         shell: bash
         run: |
           npm install
