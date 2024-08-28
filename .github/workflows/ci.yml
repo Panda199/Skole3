@@ -6,7 +6,10 @@ on:
 jobs:
   build:
     name: Build # Name of your job
-    runs-on: ubuntu-latest # What OS to run on, usually windows-latest or ubuntu-latest
+    strategy:
+        matrix:
+            os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout code #When the github action starts its an empty container, so to interact with your codebase you need to checkout the repo first
