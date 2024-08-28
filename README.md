@@ -1,3 +1,5 @@
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/Panda199/Skole3/ci.yml?label=Build)
+
 # CI/CD workshop using Github actions
 
 ## Workshop
